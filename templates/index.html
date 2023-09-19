@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Upload an image</title>
-    <link rel="stylesheet" href="/static/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/static/css/main.css" />
+  </head>
+  <body>
     <h1>Upload an image</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept="image/*">
-        <input type="submit" value="Upload">
+    <form action="/age" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/*" />
+      <input type="submit" value="Upload" />
     </form>
-</body>
+    <h1>compare photos</h1>
+    <form action="/compare" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file1" accept="image/*" />
+      <input type="file" name="file2" accept="image/*" />
+      <input type="submit" value="Upload" />
+    </form>
+  </body>
 </html>
